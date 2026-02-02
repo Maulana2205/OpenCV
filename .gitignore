@@ -1,0 +1,9 @@
+﻿.idea/
+*.iml
+out/
+build/
+bin/
+*.class
+*.log
+*.jpg
+*.png
