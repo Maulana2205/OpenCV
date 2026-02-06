@@ -125,5 +125,18 @@ public class objDetect {
             // Menggambar garis Biru (RGB: 0, 0, 255 -> OpenCV Scalar: B=255, G=0, R=0)
             Imgproc.line(img, p1, p2, new Scalar(255, 0, 0), 2);
         }
+        /* // OPSI 2: MENGHUBUNGKAN SEMUA KE SEMUA (Mesh / Jaring)
+        for (int i = 0; i < totalCircles; i++) {
+            for (int j = i + 1; j < totalCircles; j++) {
+                double[] c1 = circles.get(0, i);
+                Point p1 = new Point(Math.round(c1[0]), Math.round(c1[1]));
+
+                double[] c2 = circles.get(0, j);
+                Point p2 = new Point(Math.round(c2[0]), Math.round(c2[1]));
+
+                Imgproc.line(img, p1, p2, new Scalar(255, 255, 0), 1); // Warna Cyan
+            }
+        }
+        */
     }
 }
