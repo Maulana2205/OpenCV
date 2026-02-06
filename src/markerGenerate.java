@@ -9,7 +9,7 @@ public class markerGenerate {
     static {
         // Memuat library native OpenCV
         try {
-            System.load("C:\\Users\\ZNET\\Downloads\\opencv\\build\\java\\x64\\opencv_java4120.dll");
+            System.load("C:\\Users\\USER\\Downloads\\opencv\\build\\java\\x64\\opencv_java4120.dll");
         } catch (UnsatisfiedLinkError e) {
             System.err.println("Gagal memuat library OpenCV");
             System.exit(1);

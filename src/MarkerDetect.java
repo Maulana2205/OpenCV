@@ -16,7 +16,7 @@ public class MarkerDetect {
 
     static {
         try {
-            System.load("C:\\Users\\ZNET\\Downloads\\opencv\\build\\java\\x64\\opencv_java4120.dll");
+            System.load("C:\\Users\\USER\\Downloads\\opencv\\build\\java\\x64\\opencv_java4120.dll");
         } catch (UnsatisfiedLinkError e) {
             System.err.println("Gagal memuat library OpenCV.");
             System.exit(1);
@@ -76,7 +76,7 @@ public class MarkerDetect {
                 Imgproc.cvtColor(paddedImage, outputImage, Imgproc.COLOR_GRAY2BGR);
 
                 Objdetect.drawDetectedMarkers(outputImage, corners, ids);
-                Imgcodecs.imwrite("detected_fixed.png", outputImage);
+                Imgcodecs.imwrite("detected_AR.png", outputImage);
                 System.out.println("Lihat hasil visualisasi di: detected_fixed.png");
             } else {
                 System.out.println("GAGAL: Masih belum terdeteksi.");
