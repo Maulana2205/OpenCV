@@ -5,27 +5,19 @@ import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
 
 /**
- * Kelas <code>ObjDetect</code> menangani proses deteksi objek berbentuk lingkaran
- * (khususnya koin) menggunakan algoritma <i>Hough Circle Transform</i> dari pustaka OpenCV.
- * <p>
+ * Kelas ObjDetect menangani proses deteksi objek berbentuk lingkaran
  * Kelas ini melakukan pemrosesan gambar mulai dari pemuatan, pre-processing (grayscale & blur),
  * deteksi, hingga visualisasi hasil dengan menggambar batas lingkaran dan garis penghubung.
- * </p>
- *
- * @author User
  * @version 1.1
  */
+
 public class objDetect {
 
     /**
      * Titik masuk utama aplikasi.
-     * <p>
      * Metode ini memuat pustaka native OpenCV, membaca gambar dari path yang ditentukan,
      * melakukan konversi warna, mengurangi noise, dan mendeteksi lingkaran.
-     * Hasil deteksi divisualisasikan dan disimpan kembali ke disk.
-     * </p>
-     *
-     * @param args Argumen baris perintah (tidak digunakan dalam aplikasi ini).
+     * Hasil deteksi divisualisasikan dan disimpan kembali ke disk
      */
     public static void main(String[] args) {
         // 1. Konfigurasi Awal & Pemuatan Library
@@ -95,11 +87,8 @@ public class objDetect {
 
     /**
      * Menggambar garis lurus yang menghubungkan titik pusat dari setiap lingkaran yang terdeteksi.
-     * <p>
      * Metode ini melakukan iterasi melalui matriks lingkaran dan menggambar garis
-     * dari pusat lingkaran ke-i menuju pusat lingkaran ke-(i+1) secara berurutan.
-     * </p>
-     *
+     * dari pusat lingkaran ke-i menuju pusat lingkaran ke-(i+1) secara berurutan
      * @param img     Matriks gambar tujuan (source image) di mana garis visualisasi akan digambar.
      * Gambar ini akan dimodifikasi secara langsung (in-place).
      * @param circles Matriks keluaran dari {@code HoughCircles} yang berisi data lingkaran
