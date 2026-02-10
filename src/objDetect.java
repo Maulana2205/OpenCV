@@ -7,8 +7,7 @@ import org.opencv.imgproc.Imgproc;
 /**
  * Kelas ObjDetect menangani proses deteksi objek berbentuk lingkaran
  * Kelas ini melakukan pemrosesan gambar mulai dari pemuatan, pre-processing (grayscale & blur),
- * deteksi, hingga visualisasi hasil dengan menggambar batas lingkaran dan garis penghubung.
- * @version 1.1
+ * deteksi, hingga visualisasi hasil dengan menggambar batas lingkaran dan garis penghubung
  */
 
 public class objDetect {
